@@ -24,7 +24,7 @@ export class NewOfferPage implements OnInit {
         updateOn: 'blur',
         validators: [Validators.required, Validators.min(1)]
       }),
-      dateForm: new FormControl(null, {
+      dateFrom: new FormControl(null, {
         updateOn: 'blur',
         validators: [Validators.required]
       }),
@@ -35,6 +35,7 @@ export class NewOfferPage implements OnInit {
     });
   }
 onCreateOffer(){
+  console.log(this.form);
   console.log('creating new offer');
 }
 }
